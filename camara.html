@@ -21,11 +21,11 @@
                     if(data.length !== 0){
                         if(data === "0"){
                             $("#mensaje").html("¡Todo bien!");
-                            $("#mensaje").removeClass("intrusos");
+                            $("body").removeClass("intrusos");
                         }
                         else{
                             $("#mensaje").html("Hay "+data+(data === "1" ? " intruso" : " intrusos"));
-                            $("#mensaje").addClass("intrusos");
+                            $("body").addClass("intrusos");
                         }
                     }
                 });

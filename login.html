@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div class="row">
+    <div class="col s1">1</div>
+    <div class="col s1">2</div>
+    <div class="col s1">3</div>
+    <div class="col s1">4</div>
+    <div class="col s1">5</div>
+    <div class="col s1">6</div>
+    <div class="col s1">7</div>
+    <div class="col s1">8</div>
+    <div class="col s1">9</div>
+    <div class="col s1">10</div>
+    <div class="col s1">11</div>
+    <div class="col s1">12</div>
+</div>
+<div class="row">
+    <div class="col s6 offset-s3">
+        <div class="card">
+            <span style="vertical-align: center" class="card-title">Iniciar Sesión</span>
+            <div class="card-content">
+                <div class="input-field">
+                    <input  id="first_name" type="text" class="validate" placeholder="Usuario">
+                </div>
+                <div class="input-field">
+                    <input id="password" type="password" class="validate" placeholder="Contraseña">
+                </div>
+            </div>
+            <div class="card-action">
+                <button class="btn waves-effect waves-light" onclick="validar()" name="action">Entrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="loginController.js"></script>
+</div>
+</body>
+</html>

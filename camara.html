@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Watch Out System (WOS)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
-<body>
-    <h1>Camara</h1>
+<body class="landing is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <nav id="nav">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+
+
+                <li><a href="camara.html" class="button">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <span class="image featured"><img id="camara" src="img.jpg"></span>
+        <h2>Cámara en tiempo real</h2>
+    </section>
+
+    <!-- Main -->
+    <section id="main" class="container">
+        <section class="box special">
+            <header class="major">
+                <h2>Watch Out System</h2>
+                <span class="image featured"><img src="images/logo.png"></span>
+            </header>
+        </section>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script>
+    /**
+     * Funcion para cambiar la imagen y link
+     */
+    function cambiarImagen() {
+        document.getElementById("camara").src = "img.jpg?"+Math.random();
+    }
+    /**
+     * Función que se ejecuta una vez cargada la página
+     */
+    onload = function () {
+        setInterval(cambiarImagen, 2000);
+    }
+</script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

@@ -24,7 +24,7 @@
                             $("#mensaje").removeClass("intrusos");
                         }
                         else{
-                            $("#mensaje").html("Hay "+data+" intrusos");
+                            $("#mensaje").html("Hay "+data+(data === "1" ? " intruso" : " intrusos"));
                             $("#mensaje").addClass("intrusos");
                         }
                     }

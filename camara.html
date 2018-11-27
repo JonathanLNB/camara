@@ -7,15 +7,27 @@
         <link rel="stylesheet" href="css/camara.css"/>
     </head>
     <body>
-        <a href="login.html"></a>
-        <img id="camara" src="img.jpg">
+        <a href="login.html">Salir</a>
+        <div class="centra">
+            <img id="camara" src="img.jpg">
+            <div id="mensaje"></div>
+        </div>
 
         <!-- Scripts -->
         <script>
             function cambiarImagen(){
                 document.getElementById("camara").src = "img.jpg?"+Math.random();
                 $.get("intrusos.txt", function(data){
-                    console.log(data);
+                    if(data.length !== 0){
+                        if(data === "0"){
+                            $("#mensaje").html("¡Todo bien!");
+                            $("#mensaje").removeClass("intrusos");
+                        }
+                        else{
+                            $("#mensaje").html("Hay "+data+" intrusos");
+                            $("#mensaje").addClass("intrusos");
+                        }
+                    }
                 });
             }
             onload = function () {

@@ -1,4 +1,6 @@
 a { position: fixed; top: 20px; right: 20px; }
-.centra {  }
+body { background-color: green; }
+.centra { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+img { border-radius: 8px; }
 .intrusos { color: red; }
-#mensaje { font-size: 30px; font-family: sans-serif; }
+#mensaje { font-size: 30px; font-family: sans-serif; text-align: center; }
